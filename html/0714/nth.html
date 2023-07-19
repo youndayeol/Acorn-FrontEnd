@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child_test :nth-child(1){ /*유형에 관계없이 선택*/
+            color: red;
+        }
+        .child_test :nth-child(3){
+            color: red;
+        }
+        /*li요소 중에서*/
+        .type-test li:nth-of-type(1){
+            color: blue;
+        }.type-test li:nth-of-type(4){
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="child_test">
+        <p> nth-child</p>
+        <li> 1번째 </li>
+        <li> 2번째 </li>
+        <li> 3번째 </li>
+        <li> 4번째 </li>
+    </ul>
+
+    <ul class="type-test">
+        <p> type-test </p>
+        <li> 1번째 </li>
+        <li> 2번째 </li>
+        <li> 3번째 </li>
+        <li> 4번째 </li>
+    </ul>
+</body>
+</html>

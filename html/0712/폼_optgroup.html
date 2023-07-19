@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼_optgroup</title>
+</head>
+<body>
+    <h1>여름방학 특강 신청</h1>
+    <form>
+        <fieldset>
+            <legend>수강 신청인</legend>
+            <ul>
+                <li>
+                    <label for="id">학번</label>
+                    <input type="text" id="id" autofocus>
+                </li>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="class">학과</label>
+                    <select id="class" size="5" multiple>
+                        <!-- size : 화면에 표시될 드롭다운 항목 개수 지정 -->
+                        <!--multiple : ctrl 누르면서 드롭다운 메뉴에 있는 여러 항목 선택-->
+                        <!-- optgroup : label속성을 이용해 그룹의 제목을 붙인다 -->
+                        <optgroup label="공과대학">
+                            <option value="archi">건축공학과</option>
+                            <option value="mechanic">기계공학과</option>
+                            <option value="indust">산업공학과</option>
+                            <option value="elec">전기전자공학과</option>
+                            <option value="computer" selected>컴퓨터공학과</option>
+                            <!-- value : 옵션을 선택했을 때 서버로 넘겨질 값 지정
+                            selected : 화면에 표시될 때 기본으로 선택되어 있는 옵션 지정 -->
+                        </optgroup>
+                        <optgroup label="인문대학">
+                            <option value="history">사학과</option>
+                            <option value="lang">어문학부</option>
+                            <option value="philo">철학</option>
+
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>학습 단계 선택</legend>
+                    <select id="dif" size="1" multiple>
+                        <optgroup label="초급">
+                            <option value="beginner1">초급1</option>
+                            <option value="beginner2">초급2</option>
+                            <option value="beginner3">초급3</option>
+                        </optgroup>
+                        <optgroup label="중급">
+                            <option value="intermediatel1" selected>중급1</option>
+                            <option value="intermediatel2">중급2</option>
+                            <option value="intermediatel3">중급3</option>
+                        </optgroup>
+                        <optgroup label="고급">
+                            <option value="high1">고급1</option>
+                            <option value="high2">고급2</option>
+                            <option value="high3">고급3</option>
+                        </optgroup>
+        </fieldset>
+    </form>
+</body>
+</html>

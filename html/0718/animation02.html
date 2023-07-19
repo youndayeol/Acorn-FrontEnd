@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation02</title>
+    <style>
+        section{
+            margin: 0;
+            background: url(https://a-static.besthdwallpaper.com/sailboat-floating-in-space-wallpaper-2560x1440-78539_51.jpg) no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 900px;
+        }
+        .firpart span{
+            color: aliceblue;
+            font-size: 50px;
+            position: absolute;
+            top: 52%;
+            right: 5%;
+            animation: moveIn 2s ease-out;
+        }
+        @keyframes moveIn{
+            from{
+                right: -10%;
+                opacity: 0;
+            }
+            to{
+                right: 5%;
+                opacity: 0.8;
+            }
+        }
+        .firpart p{
+            color: aliceblue;
+            font-size: 50px;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            animation: moveIn2 3s ease-out;
+        }
+        @keyframes moveIn2{
+            from{
+                left: -10%;
+                opacity: 0;
+            }
+            to{
+                right: 5%;
+                opacity: 0.8;
+            }
+        }
+        .secpart{
+            color: aliceblue;
+            font-size: 60px;
+            position: absolute;
+            bottom: -10%;
+            animation: moveIn3 2s ease-out
+        }
+        @keyframes moveIn3{
+            from{
+                bottom: -50%;
+                opacity: 0;
+            }
+            to{
+                bottom: -10%;
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="firpart">
+            <!--span 인라인요소. 줄 안에서 해당 글자만큼 공간을 차지-->
+            <!--b, storng 강조-->
+            <span> pour un logiciel CRM, </span> <br>
+            <p> simple, complet <br>
+                et intuitif </p>
+        </div>
+
+        <pre class="secpart"><!--입력한대로 줄바꿈 적용-->
+            CRM 소프트웨어를 선택하고,
+            간단하고 완전하며
+            직관적인
+        </pre>
+    </section>
+</body>
+</html>

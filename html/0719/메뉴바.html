@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+        }
+        .box{
+            width: 60px;
+            height: 20px;
+            cursor: pointer;
+            margin: 50px;
+            /* background-color: orange; */
+        }
+        .move:hover{
+            /* border-bottom: solid 2px orange; */
+            background-color: orange;
+            transform: scale(1.2);
+            transform: rotate(25deg);            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box move">box1</div>
+        <div class="box move">box1</div>
+        <div class="box move">box1</div>
+    </section>
+</body>
+</html>

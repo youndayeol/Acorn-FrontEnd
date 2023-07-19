@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form input[type="number"]{
+            width: 180px;
+            height: 40px;
+            font-size: 25px;
+            text-align: center;
+        }
+        form input:in-range{
+            color: blue;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="num">좋아하는숫자</label>
+        <input type="number" name="num" id="num" min="1" max="100" value="15">
+    </form>
+</body>
+</html>

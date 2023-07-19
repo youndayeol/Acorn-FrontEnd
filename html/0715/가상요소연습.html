@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            margin: 15px;
+        }
+        .new::after{
+            content: "NEW!!";
+            font-size: 10px;
+            padding: 2px 4px;
+            margin: 0 10px;
+            border-radius: 2px;
+            background-color: red;
+            color: aliceblue;
+        }
+        .popu::before{
+            content: "주문폭주!!";
+            font-size: 14px;
+            padding: 2px 4px;
+            margin: 0 10px;
+            background-color: violet;
+            border-radius: 1px;
+            color: black;
+        }
+        .sold::after{
+            content: "품절!!";
+            font-size: 15px;
+            padding: 2px 4px;
+            margin: 0 10px;
+            background-color: green;
+            color: lightgray;
+            border-radius: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>제품 목록</h1>
+        <ul>
+            <li class="popu">제품 A</li>
+            <li>제품 B</li>
+            <li>제품 C</li>
+            <li class="new">제품 D</li>
+            <li>제품 E</li>
+            <li class="sold">제품 F</li>
+            <li>제품 G</li>
+            <li>제품 H</li>
+        </ul>
+    </div>
+</body>
+</html>

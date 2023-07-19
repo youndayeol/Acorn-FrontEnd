@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    margin: auto;
+}
+.logo img{
+    width: 40px;
+}
+.logo{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.nav-menu{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 30px;
+    color: gray;
+    font-weight: 550;
+    /* border: 1px solid white; */
+}
+.nav{
+    margin-top: 25px;
+}
+.search{
+    margin-left: 10px;
+    margin-top: 27px;
+}
+main{
+    height: 550px;
+    background-image: linear-gradient(to bottom, darkgray, black);
+}
+.art01{
+    height: 100px;
+    transform: rotate(-15deg);
+    filter: drop-shadow(-10px 10px 10px #000);
+}
+.art02{
+    height: 00px;
+    position: relative;
+    filter: drop-shadow(-10px 10px 10px #000);
+}
+.art01 img{
+    width: 200px;
+    margin-left: 180px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+.art02 img{
+    width: 200px;
+    margin-left: 300px;
+    border-radius: 20px;
+}
+.ment1{
+    margin-left: 300px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    margin-left: 300px;
+    text-align: center;
+    color: white;
+}
+.appstore{
+    background-color: rgb(150, 150, 150);
+    margin-top: 100px;
+    margin-left: 700px;
+    text-align: center;
+    width: 120px;
+    border-radius: 10px;
+}
+.appstore:hover{
+    background-color: green;
+}
+.googlestore{
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+    margin-top: -53px;
+    margin-left: 900px;
+    height: 53px;
+    width: 150px;
+    border-radius: 10px;
+}
+.googlestore:hover{
+    background-color: green;
+}
+.googlestore img{
+    margin-top: 13px;
+}
+
+footer{
+    /* border: 1px solid white; */
+    height: 250px;
+    background-color: rgb(10, 10, 10);
+}
+.footer_m{
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer_m ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.footer_m li{
+    margin-top: 20px;
+}
+.footer_m h3{
+    color: white;
+}
+.footer_m a{
+    font-size: 13px;
+    color: gray;
+    text-decoration: none;
+}
+.footer_m a:hover{
+    color: aqua;
+}

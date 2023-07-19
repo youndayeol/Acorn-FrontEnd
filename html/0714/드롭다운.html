@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_1280.jpg);
+        }
+        .dropdown{
+            display: inline-block;
+        }
+        div{
+            border: 0;
+            cursor: pointer;
+            background-color: rgba(0, 0, 255, 0.4);
+        }
+        button{
+            border: 0;
+            background-color: lightblue;
+            cursor: pointer;
+            padding: 10px 50px;
+        }
+        .menu{
+            display: none;
+            overflow: auto;
+            text-align: center;
+        }
+        .dropdown:hover .menu{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button>드롭다운</button>
+        <div class="menu">
+            <p>메뉴1</p>
+            <p>메뉴2</p>
+            <p>메뉴3</p>
+        </div>
+    
+    </div>
+    
+</body>
+</html>

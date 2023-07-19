@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        div{
+            padding: 20px;
+            margin: 10px;
+        }
+        
+        .box1{
+            background-color: yellow;
+            float: left;
+            /* display:inline-block은 가로배치시 기본 마진, 패딩을 가지고 있지만
+            float:left로 배치하면 가로로 배치될때 요소에 기본 마진 패딩 없다
+            필요시 지정해야한다. clear 속성으로 플로팅 해제 */
+        }
+        .box2{
+            background-color: pink;
+            float: right; /*오른쪽으로 플로팅*/
+        }
+        .box3{
+            background-color: purple;
+        }
+        .box4{
+            background-color: aquamarine;
+            clear: both;
+            /* float를 사용하면 clear해준다
+            clear: left; 플로팅 왼쪽 해제
+            clear: right; 플룅 오른쪽 해제 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+</body>
+</html>

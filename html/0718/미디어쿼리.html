@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(175, 177, 197);
+        }
+      
+        h1 {
+            font-weight: 300;
+            position: absolute;
+            top: 1px;
+            height: 60px;
+            background-color: rgb(175, 177, 197);
+            border: 1px solid;
+        }        
+        address{
+            font-weight: 300;
+            position: fixed;
+            bottom: 0;
+            height: 60px;
+            background-color: rgb(175, 177, 197);
+        }
+        section {
+            margin-top: 70px;
+            display: flex;
+            height: calc(100%-120px);            
+        }
+
+        address {
+            display: block;
+            margin-top: 50px;
+            font-style: normal;
+        }
+        span {
+            color: gray;
+        }
+
+        @media screen and (max-width: 768px) {
+            section {
+                width: 768px;
+                display: flex;
+                flex-wrap: wrap; /*플렉스 항목을 여러 줄에 표시*/
+            }
+            address {
+                display: block;
+            }
+        }
+        @media screen and (max-width: 460px) {
+            section {
+                display: flex;
+                flex-direction: column;
+            }
+            address {
+                display: block;
+            }
+        }
+
+        
+        .box1, .box2, .box3 {
+            background-color:aliceblue;
+            width: 300px;
+            height: 500px;
+            box-shadow: 12px 12px 12px gray;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
+        }
+        img {
+            width: 260px;
+            height: 200px;
+            margin-left: 16px;
+        }
+        div:hover {
+            transform: translateY(-20px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>국민과 함께 성장하는 <strong>글로벌 주택금융 리더</strong></h1>
+    <section>
+        <div class="box1">
+            <h2>아낌e-보금자리론</h2>
+            <h3>0.1%p 더 저렴한 금리</h3>
+            <span>최대</span>
+            <h5>주택가격 6억원</h5>
+            <img src="https://iheartcraftythings.com/wp-content/uploads/2021/05/House6.jpg"
+                alt="">
+        </div>
+        <div class="box2">
+            <h2>아낌e-보금자리론</h2>
+            <h3>0.1%p 더 저렴한 금리</h3>
+            <span>최대</span>
+            <h5>주택가격 6억원</h5>
+            <img src="https://iheartcraftythings.com/wp-content/uploads/2021/05/House6.jpg"
+                alt="">
+        </div>
+        <div class="box3">
+            <h2>아낌e-보금자리론</h2>
+            <h3>0.1%p 더 저렴한 금리</h3>
+            <span>최대</span>
+            <h5>주택가격 6억원</h5>
+            <img src="https://iheartcraftythings.com/wp-content/uploads/2021/05/House6.jpg"
+                alt="">
+        </div>
+    </section>
+    <address>부산시 남구 문현금융로40(문현동) 부산국제금융센터 한국주택금융공사 콜센터 1688-8114
+        <br><span> 2022 KOREA HOUSING FINANCE CORPORATION. ALL Rights Reserced.</span>
+    </address>
+</body>
+
+</html>

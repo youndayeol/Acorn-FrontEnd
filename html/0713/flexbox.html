@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex; /*부모요소에서 입력한다*/
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; 가운데정렬 */
+            /* justify-content: space-around; 양쪽끝 적당한 공백 있으면서 정렬*/
+            /* justify-content: space-between; 적당한 공백 있음연서 정렬*/
+            /* 교차축 x축 */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: center; */
+            /* flex-direction: column; 세로로 방향전환(주축이 됨) */
+            justify-content: center;
+            /* justify-content: space-between; */
+            height: 100vh;
+            border: 3px solid brown;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+        }
+        .box1{
+            background-color: pink;
+        }
+        .box2{
+            background-color: lightblue;
+        }
+        .box3{
+            background-color: lightgreen;
+        }
+        .box4{
+            background-color: lightseagreen;
+        }
+        .box5{
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate</title>
+    <style>
+        .origin{
+            border: 1px solid;
+            width: 200px;
+            margin: 50px;
+        }
+        .rotatex:hover{
+            transform: rotateX(45deg);/*x축을 기준으로 시계방향으로 회전*/
+        }
+        .rotatey:hover{
+            transform: rotateY(45deg);/* y축 "" */
+        }
+        .rotatez:hover{
+            transform: rotateZ(45deg);
+        }
+        .rotatexyz:hover{
+            transform: rotate3d(2.5, 1.2, -1.5, 45deg); /*x축,y축,z축으로 -1.5만큼의
+            방향 벡터로 45도 회전*/
+        }
+    </style>
+</head>
+<body>
+    <h2>이미지 3차원 회전하기</h2>
+    <div class="origin">
+        <div class="rotatex"> <img src="../images/googlestore.png" width="200px"></div>
+    </div>
+    <div class="origin">
+        <div class="rotatey"> <img src="../images/googlestore.png" width="200px"></div>
+    </div>
+    <div class="origin">
+        <div class="rotatez"> <img src="../images/googlestore.png" width="200px"></div>
+    </div>
+    <div class="origin">
+        <div class="rotatexyz"> <img src="../images/googlestore.png" width="200px"></div>
+    </div>
+</body>
+</html>

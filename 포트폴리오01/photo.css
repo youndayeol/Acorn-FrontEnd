@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 헤더부분 */
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding-top: 10px;
+    background-color: black;
+}
+.navbar{
+    list-style: none;
+    display: flex;
+}
+.navbar a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navbar li{
+    margin-right: 100px;
+}
+.nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.namelogo a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* 바디부분 */
+.photohead{
+    text-align: center;
+    animation: movein1 3s ease-out
+}
+.container{
+    width: 1020px;
+    height: 750px;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+.photo{
+    width: 1100px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    animation: movein1 2s ease-out
+}
+.photobox1{
+    background-image: url(../image/moon01.jpeg);
+    background-size: cover;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px gray;
+}
+.photobox2{
+    background-image: url(../image/m2.jpeg);
+    background-size: cover;
+    background-position: 20% 50%;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px gray;
+}
+.photobox3{
+    background-image: url(../image/camera1.jpeg);
+    background-size: cover;
+    background-position: 50%;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px gray;
+}
+@keyframes movein1{
+    from{
+        bottom: -520px;
+        opacity: 0;
+    }
+    to{
+        bottom: 10px;
+        opacity: 1;
+    }
+}
+.photo2{
+    width: 1200px;
+    height: 350px;
+    animation: movein2 3s ease-out;
+    position: relative;
+    display: flex;
+}
+.photobox4{
+    background-image: url(../image/jeju.jpeg);
+    background-size: cover;
+    background-position: 50%;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px gray;
+}
+.photobox5{
+    background-image: url(../image/po1.jpg);
+    background-size: 190%;
+    background-position: 10%;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px gray;
+}
+.photobox6{
+    background-image: url(../image/po2.jpg);
+    background-size: 190%;
+    background-position: 50%;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px gray;
+}
+@keyframes movein2{
+    from{
+        bottom: -520px;
+        opacity: 0;
+    }
+    to{
+        bottom: 10px;
+        opacity: 1;
+    }
+}
+.photo div:hover,
+.photo2 div:hover{
+    scale: 1.2;
+}

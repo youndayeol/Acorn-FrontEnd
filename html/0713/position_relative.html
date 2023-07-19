@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_relative</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .static{
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            position: static; /*요소를 문서의 흐름에 맞추어 배치(기본값)*/
+        }
+        .relative-1{
+            background-color: blue;
+            width: 300px;
+            height: 200px;
+            position: relative;
+        }
+        .relative-2{
+            background-color: lightgoldenrodyellow;
+            width: 300px;
+            height: 200px;
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+        .fixed{
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            position: fixed;
+            right: 50px;
+            top: 50px;
+        }
+        .sticky{
+            width: 80px;
+            height: 80px;
+            background-color: ivory;
+            position: sticky;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">박스1</div>
+    <div class="relative-1">박스2</div>
+    <div class="relative-2">박스3</div>
+    <div class="fixed">박스4 공지사항 스크롤 생겼을 때 확인</div>
+    <div class="sticky">박스5 <br>top 5px 일 때 고정</div>
+
+    <pre>
+        기상청은 이날 "새벽 6시 전에 충청권과 전라권부터 비가 시작돼 오전에 전국 대부분 지역으로 비가 확대되겠다"고 예보했다.
+
+이어 "내오후부터 저기압과 정체전선의 영향으로 중부지방엔 돌풍과 천둥·번개를 동반한 시간당 30~80㎜의 매우 강한 비가 내리는 곳이 있겠다"고 전했다.
+
+이날부터 내일(14일)까지의 예상 강수량은 ▲전국 50~150㎜ ▲제주도 5~40㎜이다. 다만 수도권의 경우 비가 많이 오는 곳에는 최대 250㎜ 이상, 강원내륙·산지와 충청북부에는 200㎜ 이상의 비가 쏟아질 수 있다.
+
+기상청은 이에 대비해 지난 12일 오후 6시 기준 ▲서울특별시 ▲인천광역시 ▲대전광역시 ▲세종특별자치시 ▲경기도 ▲강원도 ▲충청남도 ▲충청북도 ▲전라북도 ▲경상북도 ▲서해5도 등 전국 대부분 지역에 호우 예비 특보를 발효한 상태다.
+
+아침 최저기온은 22~25도, 낮 최고기온은 26~30도를 오르내리겠다.
+
+제주도에 폭염특보가 발효된 가운데, 남부지방을 중심으로 습도가 높아 최고체감온도가 31도를 웃돌겠으니 건강관리에 유의해야겠다.
+
+주요 지역 아침 최저기온은 서울 24도, 인천 24도, 수원 24도, 춘천 23도, 강릉 23도, 청주 25도, 대전 24도, 전주 25도, 광주 25도, 대구 24도, 부산 24도, 제주 27도다.
+
+낮 최고기온은 서울 27도, 인천 26도, 수원 27도, 춘천 27도, 강릉 29도, 청주 28도, 대전 28도, 전주 29도, 광주 29도, 대구 29도, 부산 27도, 제주 33도다.
+
+이날 오후부터 서해상과 제주도남쪽바깥먼바다엔 바람이 9~16m/s로 강하게 불고, 물결이 1.5~4.0m로 매우 높게 일겠으니 항해나 조업하는 선박은 유의가 필요하다.
+
+미세먼지는 원활한 대기 확산과 강수의 영향으로 전 권역이 '좋음'~'보통' 수준으로 예상된다．
+    </pre>
+</body>
+</html>

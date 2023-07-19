@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin{
+            width: 150px;
+            height: 180px;
+            border: 1px solid black;
+            /* float: left; */
+            display: inline-block;
+            margin: 30px;
+        }
+        img{
+            width: 150px;
+            height: 180px;
+        }
+        .rotatex:hover{
+            transform: rotateX(50deg);
+        }
+        .rotatey:hover{
+            transform: rotateY(50deg);
+        }
+        #pers{
+            perspective: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <img src="https://www.codingfactory.net/wp-content/uploads/abc.jpg" alt="">
+    </div>
+    <div class="origin">
+        <div class="rotatex">
+        <img src="https://www.codingfactory.net/wp-content/uploads/abc.jpg" alt="">
+        </div>
+        <div class="origin">
+            <div class="rotatey">
+            <img src="https://www.codingfactory.net/wp-content/uploads/abc.jpg" alt="">
+            </div>
+            <div class="origin">
+                <div class="rotatex" id="pers">
+                <img src="https://www.codingfactory.net/wp-content/uploads/abc.jpg" alt="">
+                </div>
+                <div class="origin">
+                    <div class="rotatey" id="pers">
+                    <img src="https://www.codingfactory.net/wp-content/uploads/abc.jpg" alt="">
+                    </div>
+    </div>
+</body>
+</html>
