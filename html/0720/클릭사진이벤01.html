@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 이벤트</title>
+    <style>
+        .over{
+            position: absolute;
+            left: 60px;
+            top: 45px;
+        }
+        .detail button{
+            position: absolute;
+            left: 265px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="item">
+        <img src="../images/kids.jpg" alt="">
+        <button class="over" id="open" onclick="showDetail()"> 상세 설명 보기 </button>
+        <div id="desc" class="detail">
+            <h4>등심붓꽃</h4>
+            <p>Do not confuse the primiean values true and false with 
+                truthiness or falsthat is not false, undefined, 
+                null, 0, -0, NaN, ndition. For example:</p>
+            <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        function showDetail(){
+            //상세 설명 부분을 화면에 표시
+            document.querySelector('#desc').style.display = "block"
+            document.querySelector('#open').style.display = "none"
+            
+        }
+
+        function hideDetail(){
+            //상세 설명 부분을 화면에서 감춤
+            document.querySelector('#desc').style.display = "none"
+            document.querySelector('#open').style.display = "block"
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents1{
+            display: grid;
+            /* 화면을 꽉 채울만큼 칼럼 너비를 늘려서 표시 */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-bottom: 20px;
+        }
+        .parents2{
+            display: grid;
+            /* 컬럼 최소 너비 만큼만 채워서 표시 */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+        .box{
+            padding: 15px;
+        }
+        .box:nth-child(odd){
+            background-color: beige;
+        }
+        .box:nth-child(even){
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h3> auto-fit 일 때</h3>
+    <p>화면이 넓을 때에는 남는 공간 없이 꽉 채워서 컬럼 표시</p>
+    <div class="parents1">
+        <div class="box">syshrhsthgthrthswthswhytsrhrthshsrtgrhbrhbgtyhenty nh nthn ty n`</div>
+        <div class="box">ojpriagjepjaeojgepsjpgojrogjasprgjpsorejgopjegpijrpogjepgjaipjgipehaioejrgoiaepgoaegoiergop</div>
+        <div class="box">airjgjpGJIgtJRJPITJEIREGTIG</div>
+        <div class="box">JERGOIPAJRPIGJRIPGJWPFOPIJGPIHipeojiprj49JWP9IREOPWFIJAFOWIASGRIOIAPOWFJIAEGAWJpgiRGOISEJPRHi4935goesilrgrthdtrdg</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+        <div class="box">box9</div>
+        <div class="box">box</div>
+    </div>
+    <h3> auto-fit 일 때</h3>
+    <p>칼럼의 최소 너비 200px만 표시하고 남는 공간 그대로 표시</p>
+    <div class="parents2">
+        <div class="box">syshrhsthgthrthswthswhytsrhrthshsrtgrhbrhbgtyhenty nh nthn ty n`</div>
+        <div class="box">ojpriagjepjaeojgepsjpgojrogjasprgjpsorejgopjegpijrpogjepgjaipjgipehaioejrgoiaepgoaegoiergop</div>
+        <div class="box">airjgjpGJIgtJRJPITJEIREGTIG</div>
+        <div class="box">JERGOIPAJRPIGJRIPGJWPFOPIJGPIHipeojiprj49JWP9IREOPWFIJAFOWIASGRIOIAPOWFJIAEGAWJpgiRGOISEJPRHi4935goesilrgrthdtrdg</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+        <div class="box">box9</div>
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

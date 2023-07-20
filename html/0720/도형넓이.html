@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도형넓이</title>
+</head>
+<body>
+
+    <script>
+        let radius;
+        let triangle1;
+        let triangle2;
+        let square1;
+        let square2;
+        const pi = Math.PI;
+
+        radius = prompt("반지름을 입력하세요");
+        document.write("원의 넓이 : " + radius * radius * pi + "<br>");
+
+        triangle1 = prompt("가로 값을 입력하세요");
+        triangle2 = prompt("세로 값을 입력하세요");
+        document.write("삼각형의 넓이 : " + triangle1 * triangle2 + "<br>");
+
+        square1 = prompt("가로 값을 입력하세요");
+        square2 = prompt("세로 값을 입력하세요");
+        document.write("사각형의 넓이 : " + square1 * square2 / 2);
+
+    </script>
+    
+</body>
+</html>
