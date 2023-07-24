@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert 알림창 표시</title>
+</head>
+<body>
+    <h2>DOM 요소에 함수 직접 연결하기</h2>
+    <p>
+        문서 객체 모델 DOM
+        Document Object Model의 약자
+        자바스크립트를 이용하여
+        웹 문서에 접근하고 제어할 수 있도록
+        객체를 사용해 웹 문서를 체계적으로
+        정리하는 방법
+    </p>
+    <img src="../images/a.jpg" id="pic">
+
+    <script>
+        let $pic = document.querySelector("#pic");
+        // let $pic = document.getElementById("pic");
+        $pic.onclick = function(){   //익명 함수
+            alert("이미지를 클릭했습니다");
+        }
+    </script>
+</body>
+</html>

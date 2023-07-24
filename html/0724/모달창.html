@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모달창</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #modal-box{
+            border: 1px solid;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(128, 128, 128, 0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        #modal-box.active{
+            display: flex;
+        }
+        #modal-contents{
+            width: 500px;
+            height: 300px;
+            padding: 10px;
+            background-color: mintcream;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        #open{
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            background-color: bisque;
+            font-weight: 700;
+            margin-left: 400px;
+            margin-top: 300px;
+            font-size: 30px;
+        }
+        #close{
+            width: 100px;
+            height: 50px;
+            margin-left: 130px;
+            color: darkgray;
+        }
+        #title{
+            font-size: 35px;
+            color: gray;
+        }
+        .card{
+            border: 1px solid gray;
+            width: 450px;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+        .card p{
+            font-size: 25px;
+            color: gray;
+        }
+        .card img{
+            width: 170px;
+        }
+        
+    </style>
+</head>
+<body>
+    <button id="open"> 프로필 보기 </button>
+
+    <div id="modal-box">
+        <div id="modal-contents">
+            <span id="title">My Profile</span>
+            <button id="close"> 닫기 X </button>
+            <div class="card">
+                <img src="../images/a.jpg" alt="이미지">
+                <p>이름 : ㅇㅇㅇ <br>
+                    주소 : ㅇㅇㅇ <br>
+                    연락처 : 123-1234</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const open = document.querySelector("#open");
+        const close = document.querySelector("#close");
+        const modalBox = document.querySelector("#modal-box");
+
+        open.addEventListener("click", () =>{
+            //클릭하면 클래스리스트에 .active 스타일 추가
+            modalBox.classList.add("active");
+        })
+
+        close.addEventListener("click", () =>{
+            modalBox.classList.remove("active");
+        })
+    </script>
+</body>
+</html>

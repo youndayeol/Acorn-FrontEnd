@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //1부터 5까지 더하기
+        let sum = 0;
+        sum += 1; //sum=sum+1과 같다
+        sum += 2;
+        sum += 3;
+        sum += 4;
+        sum += 5;
+        document.write("1부터 5까지 합 " + sum + "<br>");
+        document.write(`1부터 5까지 합 ${sum} <br>`);
+
+        //for문으로 1부터 5까지 더하기
+        // let i;
+        let sumFor = 0;
+
+        //초깃값; 조건; 1증가식
+        for(let i=1; i<6; i++){ //i++ 는 1을 증감
+            sumFor += i; //sumFor = sumFor +1
+        }
+        document.write("1부터 5까지 for문 이용" + sumFor + "<br>");
+
+        //for문을 이용해서 1000까지 더하기
+
+        //1~10까지 숫자 중 for 짝수만 더하기, 홀수만 더하기
+        
+        let odd = 0;
+        let even = 0;
+
+        for (i = 1; i <= 10; i++){
+            if (i % 2 === 0) {
+                even += i;
+            } else {
+                odd += i;
+            }
+        }
+
+        document.write("홀수의 합:", odd);
+        document.write("짝수의 합:", even + "<br>")
+
+        //별찍기
+
+        for(let k=0; k<6; k++){
+            for(let i = 0; i<=k; i++){
+                document.write("*");
+            }
+                document.write("<br>");
+
+        }
+    
+
+        //                                                                                                                                                                                                                                                                                                                                                                                      
+    </script>
+</body>
+</html>

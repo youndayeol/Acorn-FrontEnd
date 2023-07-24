@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Div id="theBody">글자 배경색 바꾸기</Div>
+    <button onclick="chColor()">랜덤 버튼 </button>
+
+    <script>
+        function chColor(){
+            let arrColor = ["red","orange","yellow","green", "blue" ,"pupple", "gray"];
+            let $bodyTag = document.getElementById("theBody");
+            let arrNum = Math.floor(Math.random()*arrColor.length); //배열명. length 배열의 길이
+            //Math.floor는 소수점을 버린다.
+            //Math.random()랜덤한 숫자를 반환 0.0~1의소수점 포함 랜덤한 숫자 반환
+            $bodyTag.style.backgroundColor = arrColor[arrNum];
+        }
+
+    </script>
+</body>
+</html>

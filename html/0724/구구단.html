@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid;
+            display: inline-block;
+            margin: 15px;
+            line-height: 2;
+            width: 100px;
+            padding: 15px;
+            background-color: ivory;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        h3{
+            border: 1px solid;
+            background-color: greenyellow;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>구구단</h1>
+    
+    <script>
+        let i, j;
+
+        for(let i=2; i<=6; i++){
+            document.write("<div>");
+            document.write("<h3>" + i + "단</h3>");
+            for(j=1; j<=9; j++){
+                document.write(i + " X " + j + " = " + i*j + "<br>");
+            }
+            document.write("</div>");
+        }
+    </script>
+</body>
+</html>
