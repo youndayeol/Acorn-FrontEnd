@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p>onclick 사용</p>
+
+    <img src="../images/a.jpg" id="myImage"><br>
+    <button id="onBtn">켜기</button>
+    <button id="offBtn">끄기</button>
+
+    <script>
+        let $myImage = document.getElementById('myImage');
+        let $onBtn = document.getElementById('onBtn');
+        let $offBtn = document.getElementById('offBtn');
+
+        //addEventListener 사용 
+        $onBtn.onclick = changePic; //함수실행
+        $offBtn.onclick = changePic2; //괄호 없음
+
+        function changePic(){
+            $myImage.src = "../images/a.jpg"
+        }
+        function changePic2(){
+            $myImage.src = "../images/phone.jpg"
+        }
+
+    </script>
+</body>
+</html>

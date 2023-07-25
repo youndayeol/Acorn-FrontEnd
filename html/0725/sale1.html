@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin-left: 35%;
+            width: 200px;}
+        .contents{
+            border: 1px solid;
+            background-color: aquamarine;
+        }
+        ul li{
+            display: flex;
+            justify-content: left;
+            margin-left: 30%;
+        }
+        button{
+            width: 200px;
+            height: 70px;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        input{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contents">
+        <img src="../images/food.jpg" alt="">
+        <form>
+        <ul>
+            <li>
+                <label for="oPrice">원 래 가 격
+                <input type="text" id="oPrice">원</label>
+            </li>
+            <li>
+                <label for="rate">할 인 율
+                <input type="text" id="rate"> % </label>
+            </li>
+            <li>
+                <button onclick="showPrice()"> 할인가격 계산하기</button>
+            </li>
+        </ul>
+        </form>
+    </div>
+    <div class="showResult"></div> <!--결과창 출력할 곳-->
+
+
+    <script>
+        function showPrice(){
+            event.preventDefault();
+            let $originPrice = document.getElementById('oPrice').value;
+            let $rate = document.getElementById('rate').value;
+            let $savePrice = $originPrice *($rate / 100);
+            let $resultPrice = $originPrice - $savePrice;
+        
+
+        document.querySelector('.showResult').innerHTML = "상품의 원래 가격은 " + $originPrice + "원이고, 할인율은 " + $rate + "%입니다. " + $savePrice + "원을 절약한" + $resultPrice + "원에 살 수 있습니다";
+        //할인율
+        //할인금액 = 원래가격 * 할인율
+        }
+    </script>
+</body>
+</html>

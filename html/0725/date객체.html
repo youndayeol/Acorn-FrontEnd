@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간 Date 객체의 메서드</title>
+</head>
+<body>
+    <h2>시간</h2>
+    <pre>자바스크립트의 내장 객체에는 Array객체와 Date객체가 대표적이다
+    객체마다 메서드와 프로퍼티가 있다
+    프로퍼티 : 객체의 특성이나 속성을 나타냄. (객체의 원형)
+    메서드 : 동작을 표현
+
+    '휴대전화하기' 프로그램
+    프로퍼티 : 제조사, 모델명, 색상, 제작년도 등
+    메서드(동작) : 전화하기, 문자보내기 등
+
+    인스턴스 : 객체의 프로퍼티와 메서드를 그대로 물려받아 똑같이 사용
+    인스턴스명 뒤에 마침표(.)를 붙이고 프로퍼티나 메서드 이름을 작성한다
+        예: .getHours()
+        now.toLocalString() 에서 now는 인스턴스, toLocalString 메서드()
+
+    </pre>
+    <div id="display"></div>
+
+    <script>
+        let date = new Date();
+        console.log(date);
+        console.log(date.getFullYear());
+        console.log(date.getMonth());
+        console.log(date.getDate());
+        console.log(date.getDay());
+        
+
+        document.write(`오늘은 ${date.getFullYear()}년 ${date.getMonth()}월 ${date.getDate()}일 입니다.<br><br<`);
+        document.write(`현재 시각은 ${date.getHours()}시 ${date.getMinutes()}분 ${date.getUTCSeconds()}초 입니다.`);
+
+        //요일을 배열로 처리
+        let specialDays = new Array("일","월","화","수","목","금","토");
+        document.write(specialDays[date.getDay()]+"요일입니다<br><br>");
+        console.log(date.getDay());
+
+        document.write("현재 시각은 " + date.toLocaleString());
+        // 밀리초 (1/1000초)
+
+        //math
+        console.log(Math.random()); //0과 1사이의 숫자
+        console.log(Math.random()); //0과 1사이의 숫자
+        console.log(Math.random()); //0과 1사이의 숫자
+        console.log(Math.random() * 100); //0과 100미만 99.999 +1 (100까지 나오게하려면)
+        console.log(Math.random() * 100 + 1); //1 ~ 100까지
+        console.log(Math.floor(Math.random() * 100 + 1)); //소수점 이하 버리기
+        console.log(Math.floor(Math.random() * 100 + 1)); //소수점 이하 버리기
+        console.log(Math.floor(Math.random() * 100 + 1)); //소수점 이하 버리기
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list">
+        <li><a href="#">item1</a></li>
+        <li><a href="#">item2</a></li>
+        <li><a href="#">item3</a></li>
+        <li><a href="#">item4</a></li>
+    </ul>
+
+    <script>
+        const list = document.querySelectorAll(".list li");
+        //el변수명 (for of 문)
+        for(let el of list){
+            el.addEventListener("click", e => {
+                e.preventDefault(); //새로고침 방지
+                console.log(e.currentTarget.innerText);
+            })
+        }
+        //currentTarget : 선택한 텍스트를 불러온다
+        //텍스트내용 번경하고자 할때
+        //선택자 innerText = "변경할 테스트"
+    </script>
+</body>
+</html>
