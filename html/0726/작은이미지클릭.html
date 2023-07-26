@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #big{
+            width: 200px; height: 200px;
+        }
+        .small{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>에디오피아 게뎁</h1>
+        <div id="prod-pic">
+            <img src="../images/food.jpg" id="big">
+            <div id="small-pic">
+                <img src="../images/light01.png" class="small">
+                <img src="../images/light02.png" class="small">
+                <img src="../images/appstore.png" class="small">
+            </div>
+        </div>
+
+        <div id="desc">
+            <ul>
+                <li>상품명 : 에디오피아 게뎁</li>
+                <li>판매가 : 9,000원</li>
+                <li>배송비 : 3,000원<br>(50,000원 이상 구매시 무료)</li>
+                <li>적립금 : 180원(2%)</li>
+                <li>로스팅 : 2019.06.17</li>
+                <button>장바구니 담기</button>
+            </ul>
+            <a href="#" id="view">상세 설명 보기</a>
+        </div>
+    </div>
+
+
+    <script>
+        let big = document.querySelector("#big");
+        let smallPics = document.querySelectorAll(".small");
+
+        for(let i=0; i<smallPics.length; i++){
+            smallPics[i].addEventListener("click", changePic);
+        }
+
+        function changePic(){
+            let newPic = this.src;
+            big.setAttribute("src", newPic);
+        }
+    </script>
+</body>
+</html>

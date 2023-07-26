@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: green;
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>총 주문 가격 확인</h1>
+        <fieldset>
+            <legend>기본 가격</legend>
+            <p>30,000원</p>
+        </fieldset>
+        <fieldset>
+            <legend>추가 주문</legend>
+            <label><input type="checkbox" name="pickle" class="checkbox" value="1200">기장추가 (1200원)</label>
+            <label><input type="checkbox" name="pickle" class="checkbox" value="3000">배송 비용 (3000원)</label>
+            <label><input type="checkbox" name="pickle" class="checkbox" value="800">산간지역 추가 비용 (800원)</label>
+            <label><input type="checkbox" name="pickle" class="checkbox" value="4800">양말 (2개, 4800원)</label>
+            <label><input type="checkbox" name="pickle" class="checkbox" value="2400">선물 포장 (2400원)</label>
+        </fieldset>
+        <fieldset>
+            <legend>합계</legend>
+            <ul>
+                <li>
+                    <input type="text" id="total" value="30000">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+
+    <script>
+        let price = 30000;
+        let sideMenu = document.querySelectorAll(".checkbox")
+
+        //class="checkbx" 모든 체크박스 (같은 이름의 클래스) 변수로 가져오기
+        //total 합계 가격 부분 변수로 가져오기
+        total.value = price + "원";
+
+        for (i=0; i<sideMenu.length; i++){
+            sideMenu[i].onclick = function() {
+                if(this.checked == true){
+                    //합계가격에 합산하기 +=
+                    price += parseInt(this.value);
+                } else {
+                    //체크 해제시 차감하기 -=
+                    price -= parseInt(this.value);
+
+                }
+                total.value = price + "원";
+            }
+        }
+    </script>
+</body>
+</html>

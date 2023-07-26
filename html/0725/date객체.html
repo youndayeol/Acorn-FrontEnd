@@ -29,11 +29,13 @@
         console.log(date);
         console.log(date.getFullYear());
         console.log(date.getMonth());
+        let month = date.getMonth() + 1;
+        document.write(`이 달은 ${month}월 입니다. <br>`);
         console.log(date.getDate());
         console.log(date.getDay());
         
 
-        document.write(`오늘은 ${date.getFullYear()}년 ${date.getMonth()}월 ${date.getDate()}일 입니다.<br><br<`);
+        document.write(`오늘은 ${date.getFullYear()}년 ${month}월 ${date.getDate()}일 입니다.<br><br<`);
         document.write(`현재 시각은 ${date.getHours()}시 ${date.getMinutes()}분 ${date.getUTCSeconds()}초 입니다.`);
 
         //요일을 배열로 처리

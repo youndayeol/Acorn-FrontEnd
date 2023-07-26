@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .small{
+            width: 150px;
+        }
+        #small-pic{
+            display: flex;
+            justify-content: center;
+            border: 1px solid;
+        }
+        #prod-pic{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+            <div id="small-pic">
+                <img src="../images/beach01.jpg" class="small">
+                <img src="../images/beach02.jpg" class="small">
+                <img src="../images/bora01.jpg" class="small">
+                <img src="../images/santo01.jpg" class="small">
+                <img src="../images/beach03.jpg" class="small">
+                <img src="../images/beach04.jpg" class="small">
+            </div>
+            <div id="prod-pic">
+                <img src="../images/food.jpg" id="big">
+        </div>
+    </div>
+
+
+    <script>
+        let big = document.querySelector("#big");
+        let smallPics = document.querySelectorAll(".small");
+
+        for(let i=0; i<smallPics.length; i++){
+            smallPics[i].addEventListener("click", changePic);
+        }
+
+        function changePic(){
+            let newPic = this.src;
+            big.setAttribute("src", newPic);
+        }
+    </script>
+</body>
+</html>

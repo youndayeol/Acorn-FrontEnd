@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부할주제</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Web Programming</h1>
+        <p>공부할 내용을 기록해 보세요</p>
+        <form>
+            <input type="text" id="subject" autofocus>
+            <button onclick="newRegister(); return false;">추가</button>
+            <!--return flase;는 버튼 기능인 submit역할을 취소함
+            입력해주지 않으면 함수를 실행하기 전에 기본기능을 먼저 함-->
+            <hr>
+            <ul id="itemList"></ul>
+        </form>
+    </div>
+
+    <script>
+        function newRegister(){
+        let newItem = document.createElement("li"); //요소 노드 추가
+        let $subject = document.querySelector("#subject"); //폼의 텍스트 필드
+        //텍스트 필드의 값을 텍스트 노드로 만들기
+        let newText = document.createTextNode(subject.value);
+        //텍스트 노드를 요소 노드의 자식 노드로 추가(연결)
+        newItem.appendChild(newText);
+        
+        //웹 문서에서 부모 노드 가져오기
+        let $itemList = document.querySelector("#itemList");
+        // $itemList.appendchild(newItem); 입력된 내용이 아래쪽에 추가된다
+        $itemList.insertBefore(newItem, $itemList.childNodes[0]);
+        //폼의 텍스트 필드 값 지워지게 만들기
+        $subject.value="";
+
+        let items = document.querySelectorAll("li"); //입력된 모든 항목 가져오기
+        for(let i=0; i<items.length; i++){
+            items[i].addEventListener("click", function(){
+            if(this.parentNode) {//부모 노드가 없다면
+            this.parentNode.removeChild(this); //부모 노트에서 삭제
+            }
+        });
+    }
+}
+    </script>
+</body>
+</html>
