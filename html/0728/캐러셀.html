@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container{
+            width: 600px;
+            height: 300px;
+            background-size: cover;
+            border: 2px solid goldenrod;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .arrow{
+            z-index: 100; /*맨위로 올라오게*/
+            font-size: 2em;
+            padding: 10px;
+            background-color: gray;
+            color: black;
+            opacity: 0.3;
+        }
+        .arrow:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>다른 이미지를 보려면 좌우 화살표를 눌러보세요</h3>
+
+    <div id="container">
+        <!--유니코드 엔티티코드-->
+        <div class="arrow" id="left"> &lang; </div>
+        <div class="arrow" id="right"> &rang; </div>
+    </div>
+
+    <script>
+        const container = document.querySelector("#container");//사진 영역
+        const pics = ['beach01.jpg', "beach02.jpg", "beach03.jpg", "beach04.jpg"] //이미지 배열
+        
+        container.style.backgroundImage = `url(../images/${pics[0]})`; //첫번째 이미지 보이게 
+        const arrows = document.querySelectorAll(".arrow"); //화살표 모두 가져오기
+        let i = 0; //배열인덱스
+        //forEach 배열의 요소를 가져와서 함수 실행해야 할 때 편리하게 사용할 수 있다 for랑 비슷
+        arrows.forEach(arrow => {
+            arrow.addEventListener("click", (e) => {
+                if(e.target.id === "left"){ //왼쪽 화살표 클릭
+                    i--; //이전 이미지로 이동
+                    if(i<0){ //첫번째 이미지?
+                        i = pics.length -1; //맨 마지막 이미지로 이동   
+                    }
+                }
+                 else if (e.target.id ==="right"){ //오른쪽 버튼 눌렀을 때
+                    i++;//다음이미지로이동
+                    if(i>=pics.length) {//만약에 이미지라면
+                    i = 0;//첫번째이미지로이동
+                }
+            }
+                container.style.backgroundImage = `url(../images/${pics[i]})`;
+            });
+
+            //마우스 오른쪽 비활성화
+            window.addEventListener("contextmenu", e => {
+                e.preventDefault();
+                alert("오른쪽 버튼을 활성화 할 수 없습니다.");
+            });
+        });
+    </script>
+</body>
+</html>

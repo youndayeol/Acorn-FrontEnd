@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 400px;
+            height: 400px;
+            border: 1px;
+            padding: 50px;
+            margin: 100px auto;
+        }
+        #wrap article{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background-color: chocolate;
+        }
+        #wrap.on article{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <section id="wrap">
+        <article>클릭</article>
+        특정 클래스가 있는지 확인하는 contains()함수
+        클래스명이 ON이 있는지 확인 후 없다몬 만들고 없애는
+    </section>
+    
+
+
+    <script>
+        let $wrap = document.querySelector("#wrap");
+        let $box = document.querySelector("article");
+
+        $wrap.addEventListener("click", () => {
+        let isOn = $wrap.classList.contains("On");
+        console.log(isOn);
+
+        $wrap.classList.toggle("on");
+    })
+         //box.style.backgroundColor = "hotpuibk"1번
+        
+
+    
+    </script>
+</body>
+</html>

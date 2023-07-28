@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .img-size{
+        width: 200px;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <img class="img-size" src="" alt="">
+    </div>
+
+
+
+    <script>
+        //카카오 오픈api가져오기 https://developers.kakao.com/
+        async function postData(url ) {
+            const response =await fetch(url, {
+                method: 'GET', //*GET,POST,PUT,DELETE,etc
+                headers: {'Authorization':'KakaoAK ab44543239760acabf8e5a55b74860d5'},
+            }); //Authorization : 개인의 rest키
+            return response.json(); //parses JOSN response into native JavaScript objects
+        }
+
+        postData('https://dapi.kakao.com/v2/search/web?query=뉴스')
+            .then((data) => {
+                console.log(data); //JSON data parsed by 'data.json()' call
+            });
+
+
+
+    </script>
+</body>
+</html>

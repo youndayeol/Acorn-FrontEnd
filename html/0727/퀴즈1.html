@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            border: 1px solid;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        let numbers = [2, 4, 6, 8, 10];
+        showArray(numbers);
+
+        let sum = 0;
+        for(let i=0; i<numbers.length; i++){
+            sum += numbers[i];
+        }
+        //push 이용해서 더한 결과를 배열 끝에 추가
+        numbers.push(sum);
+        showArray(numbers);
+
+        //배열 요소를 차례대로 더하기
+        function showArray(arr){
+            let str = "<table><tr>";
+                for (let i=0; i<arr.length; i++){
+                    str += "<td>" + arr[i] + "</td>" ;
+                }
+                str += "</tr>";
+                document.write(str);
+        }
+
+
+
+    </script>
+</body>
+</html>

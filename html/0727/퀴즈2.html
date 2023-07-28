@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //배열의 형태로 좋은 글귀 10가지 저장
+        let present = [];
+        present[0] = "인생은 롤러코스터와 같아 둘다 오르막과 내리막이 있으니깐 하지만 두려움에 떨거나 즐기는 것은 너의 선택이야";
+        present[1] = "실패란 원래 없었다 그저 경험했을뿐1";
+        present[2] = "실패란 원래 없었다 그저 경험했을뿐2";
+        present[3] = "실패란 원래 없었다 그저 경험했을뿐3";
+        present[4] = "실패란 원래 없었다 그저 경험했을뿐4";
+        present[5] = "실패란 원래 없었다 그저 경험했을뿐5";
+        present[6] = "실패란 원래 없었다 그저 경험했을뿐6";
+        present[7] = "실패란 원래 없었다 그저 경험했을뿐7";
+
+            let index = Math.floor(Math.random()*8);
+
+            document.write("<p>&quot;" + present[index] + "&quot;</p>");
+    
+        
+
+        //랜덤하게 화면에 표시
+        //ASCII코드 따옴표 이용해서 화면에 출력 document.write
+        // "<p>&quot;" + present[index] + "&quot;</p>"
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노드추가하기</title>
+    <style>
+        #orderInfo{
+            border: 3px dashed orange;
+            background-color: beige;
+            color: chocolate;
+            font-weight: bold;
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h3>상품 설명</h3>
+        <h2>HTML+CSS+자바스크립트 웹 표준의 정석</h2>
+        <p>상품 설명에 대한 내용 : 한 권으로 끝내는 웹 기본 교과서</p>
+        <p>코딩 왕초보도 OK! 기초부터 활용까지 완전정복</p>
+        <button id="order">주문하기</button>
+    </div>
+    <!--주문 정보 영역-->
+    <div id="orderInfo">장바구니 영역</div>
+
+    <script>
+        const orderButton = document.querySelector("#order"); //주문버튼
+        const orderInfo = document.querySelector("#orderInfo"); //주문 정보 영역
+        const title = document.querySelector("#container > h2"); //상품명
+
+        orderButton.addEventListener("click", () => {
+            let newP = document.createElement("p"); //새로운 p요소 노드 만들기
+            let textNode = document.createTextNode(title.innerText); //텍스트 노드 만들기
+            newP.appendChild(textNode); //텍스트 노드를 p요소 노드에 추가
+            orderInfo.appendChild(newP); //p요소를 주문정보영역에 추가
+
+            //R꾸미기
+            newP.style.fontSize = "17px";
+            newP.style.color = "pink";
+        },{once:true}); //한번만 눌러지게 (이벤트 리스너 한 번만 실행)
+
+
+
+    </script>
+</body>
+</html>

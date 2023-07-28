@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        div{
+            text-align: center;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            margin-top: 10px;
+            background-color: antiquewhite;
+        }
+        #result{
+            width: 100px;
+            height: 50px;
+            margin-top: 30px;
+
+        }
+        #num1{
+            width: 200px;
+            margin-top: 10px;
+
+        }
+        #num2{
+            width: 200px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>최대공약수 구하기</h1>
+    <p>두 수를 입력한 후 [계산하기]를 클릭하세요</p>
+    <form>
+        <label for="number1">첫 번째 수 : </label>
+        <input type="text" id="number1" placeholder="첫 번째 수">
+        <label for="number2">두 번째 수 : </label>
+        <input type="text" id="number2" placeholder="두 번째 수">
+        <button type="button" id="calc">계산하기</button>
+    </form>
+    <div id="result"></div>
+
+
+    <script>
+        const n = document.querySelector("#number1");
+        const m = document.querySelector("#number2");
+        const button = document.querySelector("button");
+        let result = document.querySelector("#result");
+        //각 입력값을 변수로 가져온다
+
+        //result 변수에는 결과 값을
+
+
+        button.onclick = function () {
+            result.innerText = getGCD(n.value, m.value)
+        }
+        //클릭하면 함수 실행 // 두 값
+
+        //받아온 두 값 비교
+        //나누어서 나머지 0이 되도록 두 값 모두 && AND연산자
+
+        function getGCD(n, m) {
+            let max = n > m ?  n : m; //최대값 max에 대입
+            let GCD = 0;
+            for (let i = 1; i <= max; i++) {
+                if (n % i === 0 && m % i === 0){
+                    GCD = i;
+                }
+            }
+            return GCD;
+        }
+
+
+
+    </script>
+</body>
+</html>

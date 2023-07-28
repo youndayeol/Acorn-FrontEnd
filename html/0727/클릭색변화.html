@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>클릭해보세요</h3>
+    <h5>할일목록</h5>
+    <ul>
+        <li><span class="check">&check; 할 일 1</span></li>
+        <li><span class="check">&check; 할 일 2</span></li>
+        <li><span class="check">&check; 할 일 3</span></li>
+        <li><span class="check">&check; 할 일 4</span></li>
+        <li><span class="check">&check; 할 일 5</span></li>
+    </ul>
+
+
+    <script>
+        //All은 같은 이름의 class를 이용해서 모든 class를 선택
+        let ListB = document.querySelectorAll(".check");
+
+        for(let i=0; i<ListB.length; i++){
+            listB[1].addEventListener("click", function(){
+                ListB[i].parentNode.sytle.color = "hotpink";
+                ListB[i].parentNode.style.textDecoration = "line-throgh";
+                // this.style.color = "blue"
+                this.style.backgroundColor = "lightgray";
+                this.style.fontSize = "20px";
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result{
+            width: 800px;
+            height: 500px;
+            background-color: burlywood;
+            text-align: left;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .quote{
+            font-size: 30px;
+            margin-top: 200px;
+        }
+        .author{
+            font-size: 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="result">
+        <div class="quote"></div>
+        <div class="author"></div>
+    </div>
+
+
+    <script>
+        fetch("https://dummyjson.com/quotes") //json 파일 읽기
+        .then(response => response.json()) //json 파일을 객체로 변환
+        .then(data => { //객체를 출력
+            const result = document.querySelector("#result");
+            const random = Math.floor(Math.random() * 30);
+            result.querySelector(".quote").innerHTML = data.quotes[random].quote;
+            result.querySelector(".author").innerHTML = ` - ${data.quotes[random].author}`;
+        })
+        .catch(error => console.log(error));
+    </script>
+</body>
+</html>

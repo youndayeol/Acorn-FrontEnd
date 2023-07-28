@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>시간에 따라 이미지가 변하는 페이지</h1>
+
+    </div>
+    <img src="../images/a.jpg" alt="">
+
+
+
+    <script>
+        const today = new Date(); //현재 시간과 날짜 담은 today 변수
+        const hrs = today.getHours(); //현재 시간 중 시 정보만 가져옴
+        const container = document.querySelector("#container");
+
+        let newImg = document.createElement("img");
+        newImg.src = (hrs < 12) ? "../images/a.jpg" : "../images/moon01.jpeg";
+        container.appendChild(newImg);
+
+    </script>
+</body>
+</html>
