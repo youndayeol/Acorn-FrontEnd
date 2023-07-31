@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h1{
+        text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      border: 4px dashed;
+      background-color: mintcream;
+      border-radius: 20px;
+      border-color: orange;
+    }
+    .entry {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid gray;
+      padding: 8px;
+      text-align: left;
+      text-align: center;
+    }
+    .btn{
+        width: 200px;
+        height: 40px;
+        background-color: darksalmon;
+        margin-bottom: 20px;
+    }
+    #name{
+        background-color: cornflowerblue;
+    }
+    #place{
+        background-color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>방명록</h1>
+    <form>
+      <div class="entry">
+        <label for="name">이 름</label>
+        <input type="text" id="name">
+      </div>
+      <div class="entry">
+        <label for="place">방문한 곳</label>
+        <input type="text" id="place">
+      </div>
+      <button type="button" onclick="add()" class="btn">기록하기</button>
+    </form>
+    <table>
+        <tr>
+          <th>이 름</th>
+          <th>방문한 곳</th>
+        </tr>
+      <tbody id="guest"></tbody>
+    </table>
+  </div>
+
+  <script>
+    function add() {
+      const name = document.getElementById('name').value;
+      const place = document.getElementById('place').value;
+
+      const guest = document.getElementById('guest');
+      const newRow = guest.insertRow();
+      newRow.innerHTML = `
+        <td>${name}</td>
+        <td>${place}</td>
+      `;
+      document.getElementById('name').value = '';
+      document.getElementById('place').value = '';
+    }
+  </script>
+</body>
+</html>

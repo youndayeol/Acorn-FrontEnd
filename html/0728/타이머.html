@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <form>
+      <label><input type="text" id="startMin">분</label>
+      <label><input type="text" id="startSec" autofocus>초</label>
+      <input type="button" value="Start" class="start-btn" onclick="startTimer()">
+      <input type="button" value="Reset" class="reset-btn" onclick="resetTimer()">
+    </form>
+    <hr>
+    <div id="display" class="remaining">
+    </div>
+  </div>
+  
+
+
+  <script>
+    let min, sec;
+    let timer; //setInterval()결과를 저장할 변수
+    function startTimer() {
+      min = document.querySelector('#startMin').value; //분 값 가져오기
+      if (min == "") min = 0;
+      sec = document.querySelector('#startSec').value;
+      if (sec == "") sec = 0;
+      timer = setInterval(countTimer, 1000);
+      //if 분값 입력 없으면 0대입
+      //초값 value 가져오기 - 위 2줄 참고해서 만들어보기
+      //if 초값 입력없으면 0대입
+    }
+
+    //0이 아니면 sec--; 1초 줄이기 함수 만들기 countTimer()
+      function countTimer() {
+        //#display 위치에 innerText로 보여주기
+        if (sec != 0) {// 초 값이 있다면
+          sec--;//1초줄임
+          document.querySelector('#display').innerText = `${min}분 ${sec}초`;
+        } else {
+          if (min != 0) {//분 값이 있다면 1분 줄이고 59초부터 시작
+            min--;// 1분부터 줄임
+            sec = 59;//59초부터 시작
+          }else{//둘다 없다면
+            clearTimer(timer, "타이머 종료"); //함수실행
+            //타이머 종료 라고 나타내기
+            document.querySelector('#display').innerText = "타이머종료";
+          }
+        }
+      }
+
+      function resetTimer() {
+        clearTimer(timer, "리셋종료");
+      }
+
+      function clearTimer(t, text) {
+        clearInterval(t); //타이머종료
+        document.querySelector("#display").innerText = ""; //표시 내용 지우기
+        document.querySelector("#startMin").value = ""; //사용자 입력 내용 지우기(분)
+        document.querySelector("#startSec").value = "";//사용자 입력 내용 지우기(초)
+      }
+
+
+  
+  </script>
+</body>
+</html>
