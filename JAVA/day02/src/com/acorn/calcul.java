@@ -9,68 +9,69 @@ public class calcul {
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
-			System.out.println("¸Þ´º");
-			System.out.println("1.´õÇÏ±â");
-			System.out.println("2.»©±â");
-			System.out.println("3.°öÇÏ±â");
-			System.out.println("4.³ª´©±â");
-			System.out.println("99.Á¾·á");
-			System.out.println("¿øÇÏ´Â ¸Þ´º¸¦ ¼±ÅÃÇÏ¼¼¿ä.:>>>_");
+			System.out.println("ï¿½Þ´ï¿½");
+			System.out.println("1.ï¿½ï¿½ï¿½Ï±ï¿½");
+			System.out.println("2.ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("3.ï¿½ï¿½ï¿½Ï±ï¿½");
+			System.out.println("4.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("99.ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.:>>>_");
 			int cal = sc.nextInt();
 			
 			if(cal == 99)
 			break;
 			
 			if(cal == 1) {
-				System.out.println("Ã¹¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 				int num1 = sc.nextInt();
-				System.out.println("µÎ¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 				int num2 = sc.nextInt();
-				System.out.println("°á°ú´Â " + (num1 + num2) + " ÀÔ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ " + (num1 + num2) + " ï¿½Ô´Ï´ï¿½.");
 			}
 			else if(cal == 2) {
-				System.out.println("Ã¹¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 				int num1 = sc.nextInt();
-				System.out.println("µÎ¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 				int num2 = sc.nextInt();
-				System.out.println("°á°ú´Â " + (num1 - num2) + " ÀÔ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ " + (num1 - num2) + " ï¿½Ô´Ï´ï¿½.");
 			}
 			else if(cal == 3) {
-				System.out.println("Ã¹¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 				int num1 = sc.nextInt();
-				System.out.println("µÎ¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 				int num2 = sc.nextInt();
-				System.out.println("°á°ú´Â " + (num1 * num2) + " ÀÔ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ " + (num1 * num2) + " ï¿½Ô´Ï´ï¿½.");
 			}
 			else if(cal == 4) {
-				System.out.println("Ã¹¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 				int num1 = sc.nextInt();
-				System.out.println("µÎ¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 				int num2 = sc.nextInt();
-				System.out.println("°á°ú´Â " + (num1 / num2) + " ÀÔ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ " + (num1 / num2) + " ï¿½Ô´Ï´ï¿½.");
 			}
 			else if((cal != 1) && (cal !=2) && (cal != 3) && (cal != 4) && (cal != 99) ) {
-				System.out.println("Àß¸øµÈ ¸Þ´º¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù");
-				System.out.println("¿øÇÏ´Â ¸Þ´º¸¦ ´Ù½Ã ¼±ÅÃÇÏ¼¼¿ä");
+				System.out.println("ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½");
+				System.out.println("ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 			}
 			
 		}
 			
 		
-		//°è»ê±â ÇÁ·Î±×·¥
-		//¸Þ´º
-		//1.´õÇÏ±â
-		//2.»©±â
-		//3.°öÇÏ±â
-		//4.³ª´©±â
-		//99.Á¾·á
-		//¿øÇÏ´Â ¸Þ´º¸¦ ¼±ÅÃÇÏ¼¼¿ä:>>>_
-		//¼±ÅÃµÈ ±â´ÉÀ¸·Î ÀÌµ¿
-		//Ã¹¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä
-		//µÎ¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä
-		//°á°úÃâ·Â
-		//¸Þ´º·Î ÀÌµ¿
-		//¹Ýº¹
+		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½
+		//ï¿½Þ´ï¿½
+		//1.ï¿½ï¿½ï¿½Ï±ï¿½
+		//2.ï¿½ï¿½ï¿½ï¿½
+		//3.ï¿½ï¿½ï¿½Ï±ï¿½
+		//4.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//99.ï¿½ï¿½ï¿½ï¿½
+		//ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½:>>>_
+		//ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
+		//Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½
+		//ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
+		//ï¿½Ýºï¿½
+		sc.close();
 	}
 
 }
