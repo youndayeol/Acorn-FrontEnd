@@ -1,4 +1,4 @@
-package com.acorn;
+package day.study;
 
 import java.util.Scanner;
 
