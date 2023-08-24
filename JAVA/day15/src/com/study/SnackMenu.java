@@ -8,7 +8,7 @@ public class SnackMenu {
 
 	public void menu() {
 		sc = new Scanner(System.in);
-		snackController = new SnackController;
+		snackController = new SnackController();
 		//스낵류를 입력하세요
 		System.out.println("스낵류를 입력하세요");
 		// 종류:
