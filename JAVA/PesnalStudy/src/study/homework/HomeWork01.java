@@ -35,9 +35,9 @@ public class HomeWork01 {
 //		float f = Float.MAX_VALUE;
 		
 		System.out.println(i + " ====== " + (i + 1));
-		System.out.println(i + 1);
+//		System.out.println(i + 1);
 		System.out.println(d + " ====== " + (d + 1));
-		System.out.println(d + 1);
+//		System.out.println(d + 1);
 //		System.out.println(f);
 		
 

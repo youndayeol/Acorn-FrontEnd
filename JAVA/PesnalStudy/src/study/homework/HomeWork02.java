@@ -16,7 +16,7 @@ public class HomeWork02 {
 			System.out.print((i+1) + "번째 : " + iArr2[i] + " ");
 		}
 		System.out.println();
-		System.out.println("라. 6개의 크기를 가진 실수 배열을 new 연산자로 생성하고, 배열의 4번째 요소부터 6번째 요소까지를 각각 40.1, 50.1, 60.1의 값을 할당하라");
+		System.out.println("라. 6개의 크기를 가진 실수 배열을 new 연산자로 생성하고, 배열의 6번째 요소부터 8번째 요소까지를 각각 40.1, 50.1, 60.1의 값을 할당하라");
 		
 		double[] dArr1 = new double[6];
 		dArr1[5] = 40.1;
