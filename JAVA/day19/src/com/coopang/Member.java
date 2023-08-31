@@ -10,7 +10,7 @@ public class Member {
 	private String deliveryEveryAddr;
 	private Basket basket;
 	
-
+	
 	public Member() {}
 
 	public Member(long id, String name,
