@@ -18,14 +18,14 @@ public class HomeWork02 {
 		System.out.println();
 		System.out.println("라. 6개의 크기를 가진 실수 배열을 new 연산자로 생성하고, 배열의 6번째 요소부터 8번째 요소까지를 각각 40.1, 50.1, 60.1의 값을 할당하라");
 		
-		double[] dArr1 = new double[6];
-		dArr1[5] = 40.1;
-		dArr1[6] = 50.1;
-		dArr1[7] = 60.1;
-		System.out.println("마. 라의 결과를 출력");
-		for(double i = 5; i < 8; i++) {
-			System.out.print(((int)i+1) + "번째 : " + dArr1[(int)i] + " ");
-		}
+//		double[] dArr1 = new double[6];
+//		dArr1[5] = 40.1;
+//		dArr1[6] = 50.1;
+//		dArr1[7] = 60.1;
+//		System.out.println("마. 라의 결과를 출력");
+//		for(double i = 5; i < 8; i++) {
+//			System.out.print(((int)i+1) + "번째 : " + dArr1[(int)i] + " ");
+//		}
 		System.out.println();
 		System.out.println("바. 4의 크기를 가진 문자열 배열을 선언하면서 동시에" + "korea, " + "england, " + "japan, " + "china" + "로 값을 할당하고 그 결과를 출력하라");
 		String[] sArr1 = {"korea", "england", "japan", "china"};
