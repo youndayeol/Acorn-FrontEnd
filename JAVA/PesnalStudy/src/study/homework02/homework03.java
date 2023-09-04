@@ -23,9 +23,9 @@ public class homework03 {
 		System.out.println("=============================");
 		
 		int[] iArr = new int[100];
-		iArr[0] = 10;
+//		iArr[0] = 10;
 		
-		System.out.println(iArr[0]);
+//		System.out.println(iArr[0]);
 		for(int i = 1; i < iArr.length; i++) {
 			iArr[i] = iArr[i-1] + 10;
 			System.out.println(iArr[i]);
