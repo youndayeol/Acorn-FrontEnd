@@ -1,0 +1,17 @@
+SELECT 컬럼
+FROM 테이블
+
+SELECT*
+FROM student
+WHERE name='박지성'
+
+INSERT INTO student(studentid, name,departmentid) 
+VALUES('2345678', '이름1', '20001');
+INSERT INTO student(studentid, name,departmentid) 
+VALUES('2345678', '이름2', '10001');
+INSERT INTO student(studentid, name,departmentid) 
+VALUES('2345678', '이름3', '20001');
+INSERT INTO student(studentid, name,departmentid) 
+VALUES('2345678', '이름4', '10001');
+INSERT INTO student(studentid, name,departmentid) 
+VALUES('2345678', '이름5', '20001');
