@@ -56,6 +56,7 @@ public class homework01 {
 		System.out.println(iRoomNum);
 		
 		
+
 			
 		
 		
