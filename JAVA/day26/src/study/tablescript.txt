@@ -1,0 +1,35 @@
+create table ordergoods (
+	goodscode	char(8),
+	goodsname	varchar2(30),
+	rawmatcode	char(5),
+	rawmatname	varchar2(20)
+);
+create table mat (
+	rawmatcode	char(5),
+	rawmatvalue	varchar2(20)
+);
+create table menu (
+	ordergoods	varchar2(20),
+	rawmatchangevalue varchar2(20)
+);
+create table orderinfo (
+	serialnumber	char(10),
+	goodscode	char(10),
+	ordervalue	char(5),
+	confirmorder	varchar2(20),
+	orderdate	varchar2(20)
+);
+create table rawmat (
+	rawmatcode	char(5),
+	ramatname	varchar2(20),
+	rawmattype	varchar2(20)
+);
+create table sell (
+	serialnumber	char(10),
+	goodscode	char(10),
+	sellvalue	varchar2(20)
+);
+1.문자
+정해진 데이터 : char(13)
+정해지지 않은 데이터: varchar2(20)
+2. 숫자: int
