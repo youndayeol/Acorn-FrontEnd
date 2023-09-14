@@ -1,16 +1,33 @@
 package csv;
 
 public interface CsvFilePath {
-	public final static String fInSalesGoods
-		= "C:/Users/D/Desktop/git/Acron/JAVA/day26/src/csv/insalesgoods.csv";
+	public final static String fInSalesGoods 
+		= "C:/eclipse-java-2020-12-R-win32-x86_64/eclipse"
+			+ "/workspace/day29/src/com/acorn/"
+			+ "project2nd/csv/insalesgoods.csv";
 	public final static String fOrderGoods
-		= "C:/Users/D/Desktop/git/Acron/JAVA/day26/src/csv/ordergoods.csv";
+		= "C:/eclipse-java-2020-12-R-win32-x86_64/eclipse"
+			+ "/workspace/day29/src/com/acorn/"
+			+ "project2nd/csv/ordergoods.csv";
 	public final static String fOrderInfo
-		= "C:/Users/D/Desktop/git/Acron/JAVA/day26/src/csv/orderinfo.csv";
+		= "C:/eclipse-java-2020-12-R-win32-x86_64/eclipse"
+			+ "/workspace/day29/src/com/acorn/"
+			+ "project2nd/csv/orderinfo.csv";
 	public final static String fRawMat
-		= "C:/Users/D/Desktop/git/Acron/JAVA/day26/src/csv/rawmat.csv";
+		= "C:/eclipse-java-2020-12-R-win32-x86_64/eclipse"
+			+ "/workspace/day29/src/com/acorn/"
+			+ "project2nd/csv/rawmaterial.csv";	
 	public final static String fSalesInfo
-		= "C:/Users/D/Desktop/git/Acron/JAVA/day26/src/csv/salesinfo.csv";
+		= "C:/eclipse-java-2020-12-R-win32-x86_64/eclipse"
+			+ "/workspace/day29/src/com/acorn/"
+			+ "project2nd/csv/salesinfo.csv";	
 	public final static String fStockInfo
-		= "C:/Users/D/Desktop/git/Acron/JAVA/day26/src/csv/stockinfo.csv";
+		= "C:/eclipse-java-2020-12-R-win32-x86_64/eclipse"
+			+ "/workspace/day29/src/com/acorn/"
+			+ "project2nd/csv/stockinfo.csv";
+	
+	public final static String fInsertScript
+	= "C:/eclipse-java-2020-12-R-win32-x86_64/eclipse"
+		+ "/workspace/day29/src/com/acorn/"
+		+ "project2nd/csv/insertscript.txt";
 }
