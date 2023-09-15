@@ -13,7 +13,7 @@ public class Goods {
 	= "jdbc:oracle:thin:@192.168.0.126:1521:xe";
 	private static String USER = "teamora";
 	private static String PASS = "1234";
-	private static String QUERY = "select goodsname, goodsprice, stockquantity\r\n"
+	private static String QUERY = "select goodsid, goodsname, goodsprice, stockquantity\r\n"
 			+ "from goods\r\n"
 			+ "where goodsname is not null";
 
@@ -43,9 +43,10 @@ public class Goods {
 		// , 행의집합 = executeQuery()
 		rs = stmt.executeQuery(QUERY);
 		while(rs.next()) {
-			System.out.print("상품이름: " + rs.getString(1) + "  ");
-			System.out.print("상품가격: " + rs.getInt(2) + "  ");
-			System.out.println("재고수량: " + rs.getInt(3));
+			System.out.print("상품번호: " + rs.getInt(1) + "  ");
+			System.out.print("상품이름: " + rs.getString(2) + "  ");
+			System.out.print("상품가격: " + rs.getInt(3) + "  ");
+			System.out.println("재고수량: " + rs.getInt(4));
 		}
 		
 		

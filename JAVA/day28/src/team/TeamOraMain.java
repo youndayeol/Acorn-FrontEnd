@@ -1,12 +1,12 @@
 package team;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class TeamOraMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
-		
 		
 			System.out.println("로그인 환경을 선택해주세요.");
 			System.out.println("1. 사용자 로그인"); 
@@ -24,6 +24,10 @@ public class TeamOraMain {
 					if(userId.equalsIgnoreCase("user")) {
 						//주문가능상품 호출();
 						System.out.println("주문가능상품호출");
+						CanOrderGoodsTest gt = new CanOrderGoodsTest();
+						gt.getgoods();
+						gt.printGoods();
+						
 					}
 					
 			} else if(loginNum == 2) {

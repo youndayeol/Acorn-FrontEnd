@@ -16,11 +16,11 @@ public class CanOrderGoods {
 			+ "from goods\r\n"
 			+ "where goodsname is not null";
 
-
 	public static void main(String[] args) {
 		Connection conn = null;
 		Statement stmt = null;
 		ResultSet rs = null;
+		
 		try {
 			// 연결 설정
 			conn = DriverManager.getConnection(DB_URL, USER, PASS);
@@ -46,14 +46,10 @@ public class CanOrderGoods {
 			System.out.print("상품이름: " + rs.getString(1) + "  ");
 			System.out.print("상품가격: " + rs.getInt(2) + "  ");
 			System.out.println("재고수량: " + rs.getInt(3));
+			
 			}
 		}
 		rs.close();
 	}
 
-
-
 }
-
-
-
