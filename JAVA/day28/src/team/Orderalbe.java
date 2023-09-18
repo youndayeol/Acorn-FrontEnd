@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class CanOrderGoods {
+public class Orderalbe {
 
 	private static String DB_URL 
 	= "jdbc:oracle:thin:@192.168.0.126:1521:xe";

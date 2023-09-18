@@ -52,13 +52,13 @@ public class Project {
 				while(rs.next()) {
 					//String LOGINSQL = "SELECT usernumber FROM userinfo WHERE usernumber = userId";
 					//ResultSet idData = stmt.executeQuery(LOGINSQL);
-
+					System.out.println("12345");
 					//String idData = stmt.executeQuery("SELECT usernumber FROM userinfo WHERE usernumber = userId");
 					if (userId == rs.getInt(1)) {
 						// 주문가능상품 호출 부분();
-						CanOrderGoodsTest gt = new CanOrderGoodsTest();
+						OrderableTest gt = new OrderableTest();
 						gt.getgoods();
-						gt.printGoods();
+						gt.OrderableGoods();
 						break;
 					}	
 				}
@@ -76,7 +76,7 @@ public class Project {
 				while(rs.next()) {
 					if(adminId == rs.getInt(1)) {
 					
-					//adminmebu 호출부분
+					//adminmenu 호출부분
 					
 					}
 				}

@@ -24,10 +24,9 @@ public class TeamOraMain {
 					if(userId.equalsIgnoreCase("user")) {
 						//주문가능상품 호출();
 						System.out.println("주문가능상품호출");
-						CanOrderGoodsTest gt = new CanOrderGoodsTest();
+						OrderableTest gt = new OrderableTest();
 						gt.getgoods();
-						gt.printGoods();
-						
+						gt.OrderableGoods();
 					}
 					
 			} else if(loginNum == 2) {

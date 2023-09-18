@@ -35,7 +35,7 @@ public class GoodsList {
 	}
 	
 	void getgoods() throws Exception {
-		String query = "select goodsid, goodsname, goodsprice, stockquantity\r\n"
+		String query = "select goodsid, goodsname, goodsprice\r\n"
 				+ "from goods\r\n"
 				+ "where goodsname is not null";
 		Statement stmt = con.createStatement();
@@ -54,7 +54,7 @@ public class GoodsList {
 	}
 	void printGoods() throws Exception {
 		for(int i = 0; i < 20; i++) {
-			System.out.println(goodsIdArr[i] + ". 상품명: " + goodsNameArr[i] + ", 금액: " + goodsPriceArr[i] + ", 남은 수량: " + goodsStockArr[i]);
+			System.out.println(goodsIdArr[i] + ". 상품명: " + goodsNameArr[i] + ", 금액: " + goodsPriceArr[i]);
 		}
 	}
 
