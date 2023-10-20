@@ -1,20 +1,13 @@
-package com.hunter;
+package com.prey;
 
 import com.common.Location;
 
-public class HunterImpl implements IHunter {
+public class PreyImpl implements IPrey {
 	private int health;
 	private int attackPower;
 	private int defencePower;
-	private int cash;
-	private int speed;
-	private int type;
 	private Location location;
-
-	@Override
-	public void wake(int basicHealth) {
-		System.out.println("P:wake()");
-	}
+	private int type;
 
 	@Override
 	public void walk(int speed) {
@@ -37,11 +30,6 @@ public class HunterImpl implements IHunter {
 	}
 
 	@Override
-	public void sleep(int basicHealth) {
-		System.out.println("P:sleep()");
-	}
-
-	@Override
 	public void die() {
 		System.out.println("P:die()");
 	}
@@ -50,7 +38,7 @@ public class HunterImpl implements IHunter {
 		return health;
 	}
 
-	public HunterImpl setHealth(int health) {
+	public PreyImpl setHealth(int health) {
 		this.health = health;
 		return this;
 	}
@@ -59,7 +47,7 @@ public class HunterImpl implements IHunter {
 		return attackPower;
 	}
 
-	public HunterImpl setAttackPower(int attackPower) {
+	public PreyImpl setAttackPower(int attackPower) {
 		this.attackPower = attackPower;
 		return this;
 	}
@@ -68,26 +56,8 @@ public class HunterImpl implements IHunter {
 		return defencePower;
 	}
 
-	public HunterImpl setDefencePower(int defencePower) {
+	public PreyImpl setDefencePower(int defencePower) {
 		this.defencePower = defencePower;
-		return this;
-	}
-
-	public int getCash() {
-		return cash;
-	}
-
-	public HunterImpl setCash(int cash) {
-		this.cash = cash;
-		return this;
-	}
-
-	public int getSpeed() {
-		return speed;
-	}
-
-	public HunterImpl setSpeed(int speed) {
-		this.speed = speed;
 		return this;
 	}
 
@@ -95,7 +65,7 @@ public class HunterImpl implements IHunter {
 		return location;
 	}
 
-	public HunterImpl setLocation(Location location) {
+	public PreyImpl setLocation(Location location) {
 		this.location = location;
 		return this;
 	}
@@ -104,7 +74,7 @@ public class HunterImpl implements IHunter {
 		return type;
 	}
 
-	public HunterImpl setType(int type) {
+	public PreyImpl setType(int type) {
 		this.type = type;
 		return this;
 	}

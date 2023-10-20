@@ -1,22 +1,22 @@
-package com.hunter;
+package com.prey;
 
-public class Archer extends HunterImpl {
+public class Tiger extends PreyImpl {
 	
 	@Override
 	public void walk(int speed) {
 		System.out.println("C:Archer:wake()");
 	}
-
+	
 	@Override
 	public void run(int speed) {
-		System.out.println("C:Archer:wake()");
+		System.out.println("C:Archer:run()");
 	}
-
+	
 	@Override
 	public void attack(int attackPower) {
-		System.out.println("C:Archer:wake()");
+		System.out.println("C:Archer:attack()");
 	}
-
+	
 	@Override
 	public void defence(int defencePower) {
 		System.out.println("C:Archer:defence()");
